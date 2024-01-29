@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <meta name="description" content="You can learn the amharic fidel on this site!">
+  <title>Learn Amharic Fidel</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link rel="icon" sizes="100x100" href="imgs/ha.png">
+  <link rel="apple-touch-icon" sizes="100x100" href="imgs/ha.png">
+  <link rel="apple-touch-startup-image" sizes="100x100" href="imgs/ha.png">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+  <div class="options-container">
+    <i class="fa-solid fa-gear fa-spin"></i>
+    <span class="toggle">Options</span>
+    <div class="options t">
+      <p class="items item" data-muted="false">Sound<i class="fa-solid fa-volume-high"></i></p>
+      <p class="items item" data-randomize="true">Randomize<i class="fa-solid fa-dice"></i></p>
+      <p class="items item">Tables<i class="fa-solid fa-caret-down" style="margin-right: 15px;"></i></p>
+      <div class="table-items item hide">
+        <p class="item fidel">Table of Fidel <i class="fa-solid fa-table"></i></p>
+        <p class="item words">Table of Words <i class="fa-solid fa-table"></i></p>
+      </div>
+      <p class="items item">Dark Mode<i class="fa-solid fa-moon"></i></p>
+      <p class="items item">Words<i class="fa-solid fa-keyboard"></i></p>
+      <p class="item copyright">© Copyright <a href="https://nawagest.repl.co">Nati</a> 2023</p>
+    </div>
+  </div>
+  <div class="table-of-fidel hide">
+    <table>
+      <tbody>        
+        <tr class="insertL">
+          <th>Letter</th>
+          <th>Translation</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="table-of-words hide">
+    <table>
+      <tbody>        
+        <tr class="insertW">
+          <th>Word</th>
+          <th>Translation</th>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+  <div class="practice">
+    <span class="w hide">መሆን</span>
+    <span class="l">ሀ</span>
+    <input class="i" type="text">
+    <span class="help">Need Help <i class="fa-solid fa-circle-info"></i></span>
+    <span class="a hide"></span>
+  </div>
+
+  <script src="words.js"></script>
+  <script src="fidel.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>

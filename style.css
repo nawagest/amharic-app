@@ -1,0 +1,157 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html, body {
+  overflow: hidden;
+  overflow-y: scroll;
+  -webkit-overflow-scrolling: touch;
+}
+
+html::-webkit-scrollbar, body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  font-family: sans-serif;
+  position: relative;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  z-index: -4;
+  transition: color linear 0.5s, background-color linear 0.5s;
+}
+
+a {
+  color: #000;
+}
+
+i {
+  margin-left: 5px;
+}
+
+.options-container {
+  position: fixed;
+  font-weight: bolder;
+  padding: 20px;
+  top: 0;
+  right: 0;
+}
+
+.options {
+  position: fixed;
+  right: 0;
+  top: 0;
+  height: 100vh;
+  width: 250px;
+  background-color: #e6e6e6;
+  z-index: -1;
+  transition: right ease 0.5s;
+}
+
+.table-options {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.toggle {
+  cursor: pointer;
+}
+
+.t {
+  right: -250px;
+}
+
+.practice {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  z-index: -2;
+}
+
+.items {
+  position: relative;
+  top: 40px;
+}
+
+.item {
+  padding: 20px;
+  cursor: pointer;
+}
+
+.copyright {
+  position: absolute; 
+  bottom: 0;
+}
+
+.l, .w {
+  font-size: 550%;
+}
+
+.help {
+  font-weight: bolder;
+  margin-top: 20px;
+  cursor: pointer;
+}
+
+.table-of-fidel, .table-of-words {
+  width: 100%;
+  height: 100%;
+  z-index: -3;
+}
+
+table {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 50px;
+  border: none;
+  border-collapse: collapse;
+}
+
+tr, th, td {
+  padding: 10px;
+  margin: 5px;
+  width: 300px;
+  text-align: center;
+  border: 3px solid #e6e6e6;;
+}
+
+.hide {
+  display: none;
+}
+
+.dark-mode {
+  color: #eee;
+  background-color: #121212;
+  transition: color linear 0.5s,  background-color linear 0.5s;
+}
+
+.dark-mode a {
+  color: #eee;
+}
+
+.dark-mode .options {
+  background-color: rgb(25, 25, 25);
+}
+
+input {
+  background: transparent;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: #e3e3e3 3px solid;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: background ease 0.1s;
+}
+
+input:focus {
+  outline: none;
+  background: #eee;
+}
